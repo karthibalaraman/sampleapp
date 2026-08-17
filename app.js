@@ -13,9 +13,9 @@ app.get("/", (req, res) => {
             <style>
                 body {
                     font-family: Arial, sans-serif;
-                    text-align: center;
-                    margin-top: 100px;
                     background: #f4f4f4;
+                    text-align: center;
+                    padding-top: 100px;
                 }
 
                 .container {
@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
                     margin: auto;
                     padding: 40px;
                     border-radius: 10px;
-                    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
                 }
 
                 h1 {
@@ -39,8 +39,8 @@ app.get("/", (req, res) => {
 
         <body>
             <div class="container">
-                <h1>Hello from sample app!</h1>
-                <p>This application was built and Dockerized automatically.</p>
+                <h1>Version 2 - Jenkins CI/CD!</h1>
+                <p>Node.js application is running successfully.</p>
                 <p>Jenkins → Docker → Docker Hub</p>
             </div>
         </body>
@@ -48,6 +48,6 @@ app.get("/", (req, res) => {
     `);
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
     console.log(`Application running on port ${PORT}`);
 });
