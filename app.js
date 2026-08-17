@@ -39,7 +39,7 @@ app.get("/", (req, res) => {
 
         <body>
             <div class="container">
-                <h1>Hello from Jenkins CI/CD!</h1>
+                <h1>Hello from sample app!</h1>
                 <p>This application was built and Dockerized automatically.</p>
                 <p>Jenkins → Docker → Docker Hub</p>
             </div>
